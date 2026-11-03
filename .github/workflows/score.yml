@@ -10,3 +10,4 @@ jobs:
           targets: wasm32-unknown-unknown
       - uses: Swatinem/rust-cache@v2
       - run: ./score.sh | tee -a "$GITHUB_STEP_SUMMARY"
+        shell: bash
